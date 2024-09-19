@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/5/zephyr/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/registro.css" />
+    <script
+      src="https://kit.fontawesome.com/c55fb45212.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>    
+    </style>
+    <title>Registrar Nuevo Usuario</title>
+  </head>
+
+  <body>
+    <div class="full-box login-container cover">
+      <form id="form" method="post" autocomplete="off" class="logInForm">
+        <p class="text-center text-muted">
+          <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>
+        </p>
+        <p class="text-center text-uppercase" style="color: white">
+          Registrar Nuevo Usuario
+        </p>
+        <div class="form-group label-floating">
+          <label class="control-label" for="txtEmail">Mail</label>
+          <input
+            name="txtEmail"
+            id="txtEmail"
+            class="form-control form-input"
+            type="email"           
+          />
+		  <!-- atributo del input mail que deberia funcionar supuestamente para validar el formato del mail 
+		   pattern=".+@example\.com" size="30" required -->
+          <p class="help-block">Escribe tú mail</p>
+        </div>
+
+        <div class="form-group label-floating">
+          <label class="control-label" for="cbBarrio">Barrio</label>
+          <select
+            class="form-control"
+            id="cbBarrio"
+            style="width: 19em"
+          ></select>
+        </div>
+
+        <div class="form-group label-floating">
+          <label class="control-label" for="txtUsuario"
+            >Nombre de Usuario</label
+          >
+          <input
+            name="txtUsuario"
+            id="txtUsuario"
+            class="form-control form-input"
+            type="text"
+          />
+          <p class="help-block">Escribe tú mail</p>
+        </div>
+
+        <div class="form-group label-floating">
+          <label class="control-label" for="txtPassword">Contraseña</label>
+          <input
+            type="password"
+            class="form-control form-input"
+            name="txtPassword"
+            id="txtPassword"
+          />
+          <p class="help-block">Escribe tú contraseña</p>
+        </div>
+
+        <div class="form-group label-floating">
+          <label class="control-label" for="txtRePassword"
+            >Repetir Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control form-input"
+            name="txtRePassword"
+            id="txtRePassword"
+          />
+          <p class="help-block">Repetir la contraseña</p>
+        </div>
+
+        <div class="form-group text-center">
+          <input type="submit"          
+            class="btn btn-info"
+            style="color: #fff"
+            value="Registrarse"
+          >
+           
+          </button>
+        </div>
+        <br />
+        <a href="./login.html">Ya tiene una cuenta? Iniciar Sesion</a>
+        <br />
+
+        <!-- <button id="btnAbrirModal">ver Terminos</button> -->
+        <!-- 
+        <dialog id="modal">
+          <h3>Ventana Modal</h3>
+          <p>Terminos y condiciones</p>
+          <button id="btnCerrarModal">Aceptar</button>
+        </dialog> -->
+      </form>
+    </div>
+    <!--====== Scripts -->
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script> 
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./js/sweetalert2.min.js"></script> -->  
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --> 
+
+    <script src="./js/registro.js"></script>
+
+    <!-- Modal -->
+    <div id="validationModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalMessage"></p>
+      </div>
+    </div>
+  </body>
+</html>
