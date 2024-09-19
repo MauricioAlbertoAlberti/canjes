@@ -1,0 +1,142 @@
+[
+  {
+    "ContainingType": "Canjes.Controllers.UsuariosController",
+    "Method": "ListarTodosUsuarios",
+    "RelativePath": "Usuarios/ListarTodosUsuarios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Canjes.Controllers.UsuariosController",
+    "Method": "Login",
+    "RelativePath": "Usuarios/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comando",
+        "Type": "Canjes.Comandos.ComandoLoginValidar",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Canjes.Resultados.ResultadoApi",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Canjes.Controllers.UsuariosController",
+    "Method": "ObtenerBarrios",
+    "RelativePath": "Usuarios/ObtenerBarrios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Canjes.Models.Barrio, Canjes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Canjes.Controllers.UsuariosController",
+    "Method": "ObtenerUsuarioPorMail",
+    "RelativePath": "Usuarios/ObtenerUsuarioPorMail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Canjes.Resultados.UsuarioResultado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Canjes.Controllers.UsuariosController",
+    "Method": "ObtenerUsuarioPorNombreUsuario",
+    "RelativePath": "Usuarios/ObtenerUsuarioPorNombreUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombreUsuario",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Canjes.Resultados.UsuarioResultado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Canjes.Controllers.UsuariosController",
+    "Method": "RegistrarUsuario",
+    "RelativePath": "Usuarios/RegistrarUsuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comando",
+        "Type": "Canjes.Comandos.RegistrarUsuarioComando",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Canjes.Controllers.UsuariosController",
+    "Method": "ValidarConfirmacionRegistro",
+    "RelativePath": "Usuarios/ValidarConfirmacionRegistro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comando",
+        "Type": "Canjes.Comandos.ValidarConfirmacionRegistroComando",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

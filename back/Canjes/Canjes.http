@@ -1,0 +1,6 @@
+@Canjes_HostAddress = http://localhost:5143
+
+GET {{Canjes_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
